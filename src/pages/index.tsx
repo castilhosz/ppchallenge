@@ -8,9 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>PPChallenge</title>
-        <meta name="description" content="Pedido Pago Web Challenge" />
-        <link rel="icon" href="/brand.png" />
+        <title>PPChallenge | Home</title>
       </Head>
 
       <Header />

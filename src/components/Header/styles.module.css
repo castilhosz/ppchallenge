@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 2rem;
+  width: 100%;
+  height: 5vh;
+  background: #fff
+}
+
+.container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container div div h1 {
+  font: 600 14px 'Poppins', sans-serif;
+  color: #34423d;
+}
+
+.container div div p {
+  font: 400 12px 'Poppins', sans-serif;
+  line-height: 14px;
+  color: #587169;
+}
+
+.imgLeft {
+  padding-right: 1rem;
+  border-right: 1px solid #EAEFED;
+}
+
+.imgRight {
+  padding-left: 1rem;
+  border-left: 1px solid #EAEFED;
+}

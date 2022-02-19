@@ -3,12 +3,12 @@ import styles from './styles.module.css';
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <img src="/brand.png" alt="Pedido Pago Web Challenge" />
+    <header className={styles.container}>
+      <img className={styles.imgLeft} src="/brand.png" alt="Pedido Pago Web Challenge" />
       <div>
-        <img src="/defaultAvatar.png" alt="LZ" />
+        <img className={styles.imgRight} src="/defaultAvatar.png" alt="LZ" />
         <div>
-          <strong>Luiz Zlochevsky</strong>
+          <h1>Luiz Zlochevsky</h1>
           <p>meus dados</p>
         </div>
       </div>

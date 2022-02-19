@@ -55,7 +55,7 @@
   font: 600 14px 'Poppins', sans-serif #A3B8B0;
 }
 
-.contextBox form {
+.contentBox form {
   display: flex;
   flex-direction: column;
   margin: 0px 40px;

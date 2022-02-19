@@ -26,7 +26,9 @@ const Home: NextPage = () => {
                 <label>Pesquise por</label>
                 <textarea placeholder='Pesquise por nome ou cpf' />
               </form>
-              <h2>Listagem de colaboradores</h2>
+              <div>
+                <h2>Listagem de colaboradores</h2>
+              </div>
               <table>
                 <tr>
                   <th>Nome completo</th>
@@ -36,7 +38,7 @@ const Home: NextPage = () => {
                   <th>Status</th>
                 </tr>
                 <tr>
-                  <td><img src="" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -44,7 +46,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -52,7 +54,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -60,7 +62,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -68,7 +70,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -76,7 +78,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>

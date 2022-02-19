@@ -33,3 +33,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+#tab-active {
+  color: #34423D;
+  border-bottom: 1px solid #22E0A1;
+}

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/pages/Home.module.css'
 
 import Header from "../components/Header";
+import Aside from '../components/Aside';
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
 
       <Header />
       <main>
-        <aside></aside>
+        <Aside />
         <div>
           <div className={styles.content}>
             <h1>Organização</h1>
@@ -22,23 +23,24 @@ const Home: NextPage = () => {
                 <p id='tab-active'>Colaboradores</p>
                 <p>Cargos</p>
               </div>
-              <form>
+              <div className={styles.form}>
                 <label>Pesquise por</label>
                 <textarea placeholder='Pesquise por nome ou cpf' />
-              </form>
+              </div>
               <div>
                 <h2>Listagem de colaboradores</h2>
               </div>
-              <table>
+              <table className={styles.table}>
                 <tr>
                   <th>Nome completo</th>
                   <th>Departamento</th>
                   <th>Cargo</th>
                   <th>Unidade</th>
                   <th>Status</th>
+                  <th></th>
                 </tr>
                 <tr>
-                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -46,7 +48,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -54,7 +56,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -62,7 +64,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -70,15 +72,7 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
                 <tr>
-                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
-                  <td>Administrativo</td>
-                  <td>Diretor</td>
-                  <td>Quartel General</td>
-                  <td>Ativo</td>
-                  <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
-                </tr>
-                <tr>
-                  <td><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
+                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
                   <td>Administrativo</td>
                   <td>Diretor</td>
                   <td>Quartel General</td>
@@ -86,14 +80,16 @@ const Home: NextPage = () => {
                   <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
                 </tr>
               </table>
-              <div>
+              <div className={styles.navtable}>
                 <div>
-                  <p>Mostrando 10 de 50 registros</p>
-                  <input type="" />
+                  <label>Mostrando 10 de 50 registros</label>
+                  <select>
+                    <option value="10">10</option>
+                  </select>
                 </div>
                 <div>
                   <button>&lt;</button>
-                  <strong>1 de 10</strong>
+                  <p>1 de 10</p>
                   <button>&gt;</button>
                 </div>
               </div>

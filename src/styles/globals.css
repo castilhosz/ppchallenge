@@ -40,6 +40,6 @@ a {
 }
 
 textarea::-webkit-input-placeholder {
-  padding: 14px 52px;
-  font: 500 1rem 'Poppins', sans-serif #587169;
+  font: 500 'Poppins', sans-serif #587169;
+  font-size: 1rem;
 }

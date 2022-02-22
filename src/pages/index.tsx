@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import axios from "axios";
+
 import styles from '../styles/pages/Home.module.css'
 
 import Header from "../components/Header";
@@ -39,46 +41,16 @@ const Home: NextPage = () => {
                   <th>Status</th>
                   <th></th>
                 </tr>
-                <tr>
-                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
-                  <td>Administrativo</td>
-                  <td>Diretor</td>
-                  <td>Quartel General</td>
-                  <td>Ativo</td>
-                  <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
-                </tr>
-                <tr>
-                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
-                  <td>Administrativo</td>
-                  <td>Diretor</td>
-                  <td>Quartel General</td>
-                  <td>Ativo</td>
-                  <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
-                </tr>
-                <tr>
-                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
-                  <td>Administrativo</td>
-                  <td>Diretor</td>
-                  <td>Quartel General</td>
-                  <td>Ativo</td>
-                  <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
-                </tr>
-                <tr>
-                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
-                  <td>Administrativo</td>
-                  <td>Diretor</td>
-                  <td>Quartel General</td>
-                  <td>Ativo</td>
-                  <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
-                </tr>
-                <tr>
-                  <td className={styles.name}><img src="/defaultAvatar.png" alt="" /> <p>Pikachu Soares do Santos Dias</p></td>
-                  <td>Administrativo</td>
-                  <td>Diretor</td>
-                  <td>Quartel General</td>
-                  <td>Ativo</td>
-                  <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td className={styles.name}><img src='x.image' alt="" /> <p>x.name</p></td>
+                    <td>x.department</td>
+                    <td>x.role</td>
+                    <td>x.branch</td>
+                    <td>x.status</td>
+                    <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
+                  </tr>
+                </tbody>
               </table>
               <div className={styles.navtable}>
                 <div>
@@ -102,3 +74,13 @@ const Home: NextPage = () => {
 }
 
 export default Home;
+
+/*
+Home.getInitialProps = async () => {
+  const { items } = await axios.get('https://bbbff4e5-200b-406b-9650-e44c68439220.mock.pstmn.io/agents')
+  return { collaboratorList: items }
+
+  key={i}
+  
+collaboratorList.data.map((x, i) =>
+*/

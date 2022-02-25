@@ -1,5 +1,5 @@
 export interface Collaborator {
-  agent_id: Number,
+  agent_id: number,
   name: string,
   image: URL,
   department: string,

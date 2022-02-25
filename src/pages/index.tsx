@@ -1,13 +1,42 @@
-import type { NextPage } from 'next'
+import { useEffect, useState } from 'react';
 import Head from 'next/head'
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
+
+import type { Collaborator } from '../types';
+import type { NextPage } from 'next'
 
 import styles from '../styles/pages/Home.module.css'
-
 import Header from "../components/Header";
 import Aside from '../components/Aside';
 
+
 const Home: NextPage = () => {
+  const [collaboratorData, setCollaboratorData] = useState<Collaborator>();
+
+  useEffect(() => {
+    axios
+      .get<Collaborator[]>('https://bbbff4e5-200b-406b-9650-e44c68439220.mock.pstmn.io/agents')
+      .then((response: AxiosResponse) => {
+        setCollaboratorData(response.data.items)
+      })
+  })
+
+  /*
+    if (collaboratorData istanceof Array) {
+      const collaboratorRow = collaboratorData?.map((x) =>
+        <tr key={x.agent_id}>
+          <td className={styles.name}><img src={x.image} alt="" /> <p>{x.name}</p></td>
+          <td>{x.department}</td>
+          <td>{x.role}</td>
+          <td>{x.branch}</td>
+          <td>{x.status}</td>
+          <td><a href=""><img src="/more-vertical.png" alt="" /></a></td>
+        </tr>
+      )
+    }
+  */
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -74,13 +103,3 @@ const Home: NextPage = () => {
 }
 
 export default Home;
-
-/*
-Home.getInitialProps = async () => {
-  const { items } = await axios.get('https://bbbff4e5-200b-406b-9650-e44c68439220.mock.pstmn.io/agents')
-  return { collaboratorList: items }
-
-  key={i}
-  
-collaboratorList.data.map((x, i) =>
-*/
